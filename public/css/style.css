@@ -1,0 +1,36 @@
+.cinema-seats {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.seat {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	cursor: pointer; /* Добавление курсора в виде указателя для интерактивных элементов */
+}
+
+.available {
+	background-color: green;
+}
+
+.occupied {
+	background-color: red;
+	pointer-events: none; /* Запрет кликов на занятых местах */
+}
+
+.selected {
+	background-color: yellow;
+}
+
+#continue-button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: blue;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
